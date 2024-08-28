@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const bear = document.getElementById('bear');
+        bear.addEventListener("click", getNewBear);
+        async function getNewBear() {
+            const response = await fetch("https://placebear.com");
+            const jsonData = await response.json();
+        }
+
+    getNewBear();
+    </script>
+    
+</body>
+</html>
