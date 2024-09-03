@@ -16,5 +16,5 @@ fetch("https://placebear.com", {
     console.log(data.data[2].first_name);
 })
 .catch(error => {
-    console.log(error;)
+    console.log(error);
 })
