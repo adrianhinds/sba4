@@ -1,4 +1,4 @@
-fetch("https://placebear.com", {
+fetch("https://dog.ceo/api/breeds/image/random", {
     method: 'POST',
     headers: {
         'Content-Type': 'applictatin/json'
@@ -18,3 +18,4 @@ fetch("https://placebear.com", {
 .catch(error => {
     console.log(error);
 })
+

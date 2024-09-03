@@ -1,1 +1,1 @@
-This application used the Bear Api.
+This application uses the Dog Api to generate random dog pictures.
