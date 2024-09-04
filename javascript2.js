@@ -1,4 +1,8 @@
-fetch("https://placebear.com", {
+import User from '/javascript3.js'
+
+const user = new User('Bob', 11)
+console.log(user)
+fetch('https://dog.ceo/api/breeds/image/random', {
     method: 'PUT',
     headers: {
         'Content-Type': 'applictatin/json'
