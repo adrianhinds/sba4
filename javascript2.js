@@ -1,8 +1,7 @@
-import User from '/javascript3.js'
+import { add } from '/javascript3.js';
 
-const user = new User('Bob', 11)
-console.log(user)
-fetch('https://dog.ceo/api/breeds/image/random', {
+console.log(add([1, 2, 3]))
+/* fetch('https://dog.ceo/api/breeds/image/random', {
     method: 'PUT',
     headers: {
         'Content-Type': 'applictatin/json'
@@ -22,3 +21,4 @@ fetch('https://dog.ceo/api/breeds/image/random', {
 .catch(error => {
     console.log(error);
 })
+*/
