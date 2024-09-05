@@ -1,17 +1,15 @@
-const CAT_FAVOURITES = 'https://api.thecatapi.com/v1/favourites';
-const CAT_API = 'https://api.thecatapi.com/v1';
-const CAT_API_KEY = 'live_85IigfDFRAJz3RZl3AHEGeioejA1FeoZe5RpLo7Si7yYzbLATq0UWuocM3qAqRJC';
+// const CAT_FAVOURITES = 'https://api.thecatapi.com/v1/favourites';
+// const CAT_API = 'https://api.thecatapi.com/v1';
+// const CAT_API_KEY = 'live_85IigfDFRAJz3RZl3AHEGeioejA1FeoZe5RpLo7Si7yYzbLATq0UWuocM3qAqRJC';
 
-import showCats from './import_stuff/cats.js';
-import showOptions from './utils/breeds.js';
+// import showCats from './import_stuff/cats.js';
+// import showOptions from './import_stuff/breeds.js';
 
-const container = document.querySelector('#container');
+// const container = document.querySelector('#container');
 
 const getFavourites = async () => {
-  const response = await fetch(CAT_FAVOURITES, {
-    headers: {
-      'x-api-key': CAT_API_KEY
-    }
+  const response = await fetch("https://dog.ceo/api/breeds/image/random", {
+  
   });
   const data = await response.json();
   return data;
@@ -34,5 +32,9 @@ const createSubmitButton = () => {
   return button;
 };
 
+const showFavourites = async () => {
+    const favourites = await getFavourites();
+    const container = document.getElementById('favourites-container');
+};
 
 

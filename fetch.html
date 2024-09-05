@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script type="module" defer src="javascript2.js"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <img id="dog" src="" height="250" style="cursor: pointer" />
     <script>
+        console.log("Hello World")
         const dog = document.getElementById('dog');
         dog.addEventListener("click", getNewDog);
         async function getNewDog() {

@@ -1,8 +1,55 @@
-.interactive-button {
-    background-color: #007bff;
-  color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
+/* General Styles */
+body {
+  background-color: rgb(177, 168, 168); 
+  font-family: 'Arial', sans-serif;
+  padding-top: 50px; /* Space from the top */
+}
+
+/* Container Styles */
+.container {
+  max-width: 500px; /* Limit the width */
+  background-color: blue;
+  padding: 50px;
+  border-radius: 50px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Element Styles */
+#container, #options {
+  margin-bottom: 20px; /* Space between container and options */
+}
+
+input[type="radio"] {
+  margin-right: 10px; /* Space between radio and label */
+}
+
+label {
+  font-size: 16px;
+  margin-bottom: 10px; /* Space between labels */
+  display: block;
+}
+
+/* Button Styles */
+button {
+  width: 50%;
+  padding: 10px;
+  border: none;
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3; /* Darken button on hover */
+}
+#container {
+    border: 1px solid #0e0d0d; 
+    padding: 10px; /* Add some padding inside the div */
+}
+
+#options {
+    border: 1px solid #f40e0e; 
+    padding: 10px; /* Add some padding inside the div */
+}
